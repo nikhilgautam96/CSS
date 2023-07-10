@@ -1,0 +1,65 @@
+h1 {
+    color: brown;  /* used to set the color of `foreground`. like for {text, link, button, etc}. */
+    background-color: bisque;
+}
+body {
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+
+    text-align: center;
+    text-decoration: underline;
+
+    font-weight: bolder;
+    font-family: arial, Tahoma, Verdana;
+
+    font-size: 20px;
+
+    line-height: 20px;
+
+    text-transform: lowercase ;
+}
+p {
+    color: #000000;
+    background-color: #ffffff;
+}
+
+/* Attribute Selector */
+[data-type="button"] {
+    background-color: blue;
+    color: white;
+}
+
+/* General Sibling Selector */
+h2 ~ p {
+    /* All siblings at the same level of h2 are selected even if there are other elements in between. */
+    font-style: italic;
+}
+
+/* Adjacent Sibling Selector */
+p + ul {
+    /* only the immediate adjacent element is selected. */
+    margin-left: 20px;
+}
+
+/* Child Selector */
+.container > div {
+    /* only imeediate child will get selected and not the nested children. */
+    border: 1px solid black;
+}
+
+/* Descendant Selector */
+.container span {
+    /* It will select all the children, even the nested ones. */
+    font-weight: bold;
+}
+
+/* Pseudo-class Selector */
+a:hover {
+    text-decoration: underline;
+}
+
+/* Pseudo-element Selector */
+p::first-letter {
+    font-size: 2em;
+    color: red;
+}
