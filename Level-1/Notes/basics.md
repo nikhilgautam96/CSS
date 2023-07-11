@@ -40,12 +40,12 @@
 -   `Named Colors` :
     -   eg {green, blue, etc.}
 -   `RGBA Colors` :
-    -   eg {rgba(255, 0, 0, 0.5)}. `A` is for `opacity`. `0 (fully transparent) to 1 (fully opaque)`.
+    -   eg {rgba(255, 0, 0, 0.5)}. `A` is for `Alpha Channel` which tells the `opacity` of the element. { 0 (fully transparent) to 1 (fully opaque) }.
 -   `HSL Colors` :
     -   (Hue (0 to 360), Saturation (0% to 100%), Lightness (0% to 100%)) .
     -   ` hsl(0, 100%, 50%);` = (red color in HSL).
 -   `HSLA Colors` :
-    -   `A` again is for opacity.
+    -   `A` again is for `Alpha Channel` which tells the `opacity` of the element.
     -   `color: hsla(0, 100%, 50%, 0.5);` = (semi-transparent red color in HSL).
 
 ### Selectors :
@@ -84,7 +84,9 @@ h3 {
 
 ### Text properties :
 
-1.  `text-align`
+1.  `text-align` :
+    -   It aligns the content accordingly in its container's `Box Model` by default.
+    -   It aligns the text content by x-axis only.
 
 ```css
 text-align: center;
